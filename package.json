@@ -13,7 +13,7 @@
   "devDependencies": {
     "@signalk/client": "^0.1.4",
     "bluebird": "^2.9.24",
-    "bootstrap": "^3.3.4",
+    "bootstrap": "^3.3.7",
     "bootstrap-drawer": "^1.0.0",
     "bootstrap-select": "^1.6.3",
     "bootstrap-slider": "^4.8.0",
@@ -29,6 +29,7 @@
     "mocha": "^2.3.4",
     "nanomodal": "^5.1.0",
     "openlayers": "^3.16.0",
+    "prettier": "1.12.1",
     "simplify-js": "^1.2.1",
     "uglify-js": "^2.4.20",
     "watchify": "^3.1.2",
