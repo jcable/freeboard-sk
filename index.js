@@ -78,7 +78,7 @@ map.getView().on('change:rotation', function (evt) {
 });
 
 //add our layers
-baseLayers.addBaseLayers(map);
+//baseLayers.addBaseLayers(map);
 
 
 map.addControl(layerSwitcher);
@@ -167,10 +167,10 @@ function toggleOffline() {
 	var mapTmp = $('#map').data('map');
 	if (offline) {
 		//remove internet maps
-		baseLayers.removeInternetLayers(mapTmp);
+		//baseLayers.removeInternetLayers(mapTmp);
 	} else {
 		//add internet maps
-		baseLayers.addInternetLayers(mapTmp);
+		//baseLayers.addInternetLayers(mapTmp);
 	}
 }
 
@@ -183,15 +183,15 @@ $("#offline").bootstrapToggle({
 		offline = JSON.parse(localStorage.getItem("sk-offline"));
 		if (offline) {
 			$("#offline").bootstrapToggle('on');
-			baseLayers.removeInternetLayers(map);
+			//baseLayers.removeInternetLayers(map);
 		} else {
 			$("#offline").bootstrapToggle('off');
-			baseLayers.addInternetLayers(map);
+			//baseLayers.addInternetLayers(map);
 		}
 	}else{
 		//not used yet, so add layers
 		$("#offline").bootstrapToggle('off');
-			baseLayers.addInternetLayers(map);
+			//baseLayers.addInternetLayers(map);
 	}
 
 	$("#offline").change(function () {
